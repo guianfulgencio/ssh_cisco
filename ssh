@@ -1,0 +1,9 @@
+####How to configure SSH on Cisco IOS
+hostname R1
+ip domain-name domain.local
+crypto key generate rsa
+ip ssh version 2
+line vty 0 15
+transport input ssh
+login local
+username cisco priv 15 password cisco
