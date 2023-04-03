@@ -7,3 +7,10 @@ line vty 0 15
 transport input ssh
 login local
 username cisco priv 15 password cisco
+
+####SSH login issues
+
+add to /etc/ssh/ssh_config
+
+        KexAlgorithms +diffie-hellman-group14-sha1
+        HostkeyAlgorithms +ssh-rsa
