@@ -12,5 +12,6 @@ username cisco priv 15 password cisco
 
 add to /etc/ssh/ssh_config
 
-        KexAlgorithms +diffie-hellman-group14-sha1
+        KexAlgorithms +diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
         HostkeyAlgorithms +ssh-rsa
+        Ciphers aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc
